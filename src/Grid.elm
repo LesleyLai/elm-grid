@@ -79,7 +79,7 @@ get (x, y) grid =
     case grid of
         Grid {w, h, data} ->
             if (inRange x y w h) then
-                 Array.get (x + y * h) data
+                 Array.get (x + y * w) data
             else
                 Nothing
 
@@ -101,7 +101,7 @@ set (x, y) elem grid =
     case grid of
         Grid {w, h, data} ->
             if (inRange x y w h) then
-                Grid {w=w, h=h, data=(Array.set (x + y * h) elem data)}
+                Grid {w=w, h=h, data=(Array.set (x + y * w) elem data)}
             else
                 grid
 
