@@ -3,7 +3,7 @@
     "name": "LesleyLai/elm-grid",
     "summary": "2-dimensional Grid in elm",
     "license": "Apache-2.0",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "exposed-modules": [
         "Grid"
     ],
